@@ -8,3 +8,8 @@
 // layout file, like app/views/layouts/application.html.erb
 
 console.log('Hello World from Webpacker')
+
+
+import Test from '../components/Test'
+
+console.log(Test)
