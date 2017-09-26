@@ -9,7 +9,7 @@
 
 console.log('Hello World from Webpacker')
 
-
-import Test from '../components/Test'
-
-console.log(Test)
+// 
+// import Test from '../components/Test'
+//
+// console.log(Test)
