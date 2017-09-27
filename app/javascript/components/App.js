@@ -1,16 +1,27 @@
 import React, { Component } from 'react'
-import Test from './Test'
+import Landing from './Landing'
 import Map from './Map'
-// import MapContainer from './MapContainer'
-// import TestMap from './TestMap'
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link
+} from 'react-router-dom'
 
 class App extends Component {
   render () {
-    return <div className='App'>
-      Hello
-      <Test />
-      <Map />
+    return <Router>
+      <div className='App'>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/map">Map</Link></li>
+      </ul>
+      <Switch>
+      <Route exact path="/" component={Landing}/>
+      <Route path="/map" component={Map}/>
+    </Switch>
     </div>
+  </Router>
   }
 }
 

@@ -1,3 +1,47 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+  margin: 0;
+
+}
+
+.App {
+  font-family: gotham;
+  color: #333;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+
+    a {
+      text-decoration: none;
+
+      &:visited {
+        color: #333;
+      }
+      &:hover {
+        color: rgb(78, 36, 201);
+        border-bottom: 1px solid rgb(78, 36, 201);
+      }
+    }
+  }
+}
+
+.Landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 10vh;
+
+  h2 {
+
+    font-size: 20vh;
+    margin: 0;
+  }
+}
